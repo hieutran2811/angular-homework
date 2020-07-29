@@ -41,8 +41,10 @@ export class UserEditComponent implements OnInit {
 
   submit() {
     let data = this.editUserForm.value;
-    data.group_id = Number(data.group_id);
-    this.userService.add(data);
+    this.user.group_id = Number(data.id);
+    this.user.name=data.name;
+    this.user.email=data.email;
+    this.user.group_id=data.group_id;
     this.router.navigate(['users'])
     console.log(this.userService.getAll())
   }
