@@ -41,7 +41,7 @@ export class UserEditComponent implements OnInit {
 
   submit() {
     let data = this.editUserForm.value;
-    this.user.group_id = Number(data.id);
+    this.user.id = Number(data.id);
     this.user.name=data.name;
     this.user.email=data.email;
     this.user.group_id=data.group_id;

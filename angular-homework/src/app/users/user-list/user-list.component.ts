@@ -13,6 +13,7 @@ export class UserListComponent implements OnInit {
 
   title_page = 'Users'
   users: Iuser[] = [];
+  page: number = 1;
 
   groups: Igroup[] = []
 

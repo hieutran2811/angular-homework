@@ -10,6 +10,7 @@ import { GroupListComponent } from './groups/group-list/group-list.component';
 import { UserAddComponent } from './users/user-add/user-add.component';
 import {FormControlDirective, ReactiveFormsModule} from "@angular/forms";
 import { UserEditComponent } from './users/user-edit/user-edit.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserEditComponent } from './users/user-edit/user-edit.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
